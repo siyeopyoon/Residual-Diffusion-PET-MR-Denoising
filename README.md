@@ -12,7 +12,9 @@ Pytorch Version: torch torchvision --index-url https://download.pytorch.org/whl/
 ## Sub folders
 
 Diffusion implementation : PatchDiffusion_dnPET
+
 U-net implementation : PatchDiffusion_simpleunet
+
 Transformer implemntation : PatchDiffusion_transformer
 
 ## Running the Training/Experiments
