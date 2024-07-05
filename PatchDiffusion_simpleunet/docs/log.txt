@@ -1,0 +1,24 @@
+True
+Loading dataset...
+Traceback (most recent call last):
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/train_multigpu.py", line 321, in <module>
+    main()
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/train_multigpu.py", line 316, in main
+    training_loop_multigpu.training_loop(**c)
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/training/training_loop_multigpu.py", line 75, in training_loop
+    dataset_obj = dnnlib.util.construct_class_by_name(**dataset_kwargs) # subclass of training.dataset.Dataset
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/dnnlib/util.py", line 302, in construct_class_by_name
+    return call_func_by_name(*args, func_name=class_name, **kwargs)
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/dnnlib/util.py", line 297, in call_func_by_name
+    return func_obj(*args, **kwargs)
+  File "/home/local/PARTNERS/sy1045/1_Codes/PatchDiffusion_Oblique/training/dataset.py", line 581, in __init__
+    filenames = os.listdir(volume_dir_path)
+PermissionError: [Errno 13] Permission denied: '/mnt/weka/wekafs/rad-megtron/sy1045/2_Datasets/3_WristCTs/trimmedPairs/Train/numpy_volume'
