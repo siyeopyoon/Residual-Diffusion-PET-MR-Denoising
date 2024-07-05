@@ -9,6 +9,11 @@ Ensure all the necessary packages listed.
 numpy matplotlib scikit-learn scikit-image click requests psutil tqdm imageio imageio-ffmpeg pyspng pillow nibabel
 Pytorch Version: torch torchvision --index-url https://download.pytorch.org/whl/cu118
 
+## Sub folders
+
+Diffusion implementation : PatchDiffusion_dnPET
+U-net implementation : PatchDiffusion_simpleunet
+Transformer implemntation : PatchDiffusion_transformer
 
 ## Running the Training/Experiments
 
